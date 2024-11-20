@@ -69,7 +69,9 @@
     width: 14rem;
     border-radius: 20px;
     margin-top: 5rem;
-    box-shadow: 3px 0px 10px 5px rgb(78, 78, 78);
+    cursor: pointer;
+    box-shadow: 3px 0px 10px 5px rgb(10, 10, 10);
+    transition: .5s;
 }
 
 .product-card:hover{
@@ -245,5 +247,5 @@ img{
 }
 
 .exchange div input{
-    background-color: rgb(252, 217, 165);
+    color: rgb(252, 217, 165);
 }

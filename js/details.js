@@ -1,15 +1,11 @@
+let data;
 async function getProduct() {
     const searchurl=window.location.search
     const urlParams=new URLSearchParams(searchurl)
     const id=urlParams.get("id")
     const res=await fetch(`https://dummyjson.com/products/${id}`)   
-    const data= await res.json()
+    data= await res.json()
     console.log(data);
-    // Total Amount=Offer Price×(1− 
-    //     100
-    //     Offer Percentage
-    //     ​
-    //      )
     discount=data.price*(data.discountPercentage/100)
     
     const total=Math.round(data.price+discount)
@@ -31,7 +27,7 @@ async function getProduct() {
                 </div>
                 </div>
                 <div class="buttons">
-                <button>ADD TO CART</button>
+                ${localStorage.getItem(data.id)?`<button onclick="goToCart(${data.id})">GO TO CART</button>`:`<button onclick="addToCart(${data.id})">ADD TO CART</button>`}
                 <button>BUY NOW</button>
                 </div>
                 </div>
@@ -67,3 +63,12 @@ async function getProduct() {
      
 }
 getProduct()
+
+function addToCart(id){
+    localStorage.setItem(id,JSON.stringify(data))
+    getProduct()
+}
+
+function goToCart(id){
+    window.location.href=`/pages/cart.html?id=${id}`
+}
