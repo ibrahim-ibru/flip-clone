@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    background-color: rgb(46, 46, 45);
+}
+
+.nav{
+    background-color: rgba(28, 28, 28, 0.989);
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    color:rgb(252, 217, 165) ;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.icon,.mid,.right{
+    display: flex;
+    background-color: rgba(28, 28, 28, 0.989);
+
+}
+.mid div{
+    background-color: rgba(28, 28, 28, 0.989);
+    margin-right: 4rem;
+    font-size: 14px;
+}
+
+.icon div{
+    background-color: rgba(28, 28, 28, 0.989);
+    font-size: 25px;
+}
+.icon div i{
+    background-color: rgba(28, 28, 28, 0.989);
+    margin-right: 2rem;
+
+}
+
+.right input{
+    margin-left: 4rem;
+    background-color:rgb(252, 217, 165) ;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 20rem;
+    border: 1px solid ;
+    border-radius: 5px;
+}
+
+.mid div:hover{
+    scale: 1.2;
+}
+.main-body {
+    text-align: center;
+    color:rgb(252, 217, 165) ;
+}
+
+.products{
+    /* background-color: red; */
+    margin: auto;
+    height: 23rem;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.product-card{
+    /* background-color: rgb(252, 217, 165); */
+    height: 100%;
+    width: 14rem;
+    border-radius: 20px;
+    margin-top: 5rem;
+    box-shadow: 3px 0px 10px 5px rgb(78, 78, 78);
+}
+
+.product-card:hover{
+    scale: 1.05;
+}
+.product-img{
+    /* background-color: green; */
+    height: 56%;
+    width: 95%;
+    border: 1px solid rgb(252, 217, 165);
+    margin: 10px 5px 0px;
+    border-radius: 20px;
+}
+
+.product-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.product-data{
+    /* background-color: yellow; */
+    height: 40%;
+    /* background-color: rgb(252, 217, 165); */
+    width: 85%;
+    align-content: center;
+    margin: auto;
+    text-align: start;
+}
+
+.product-data p{
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.product-data button{
+    border-radius:0 5px;
+    margin-top:10px ;
+    border-top: 1px solid rgb(252, 217, 165);
+    border-right: 1px solid rgb(252, 217, 165);
+    color: rgb(252, 217, 165); 
+}
+
+.product-data button:hover{
+    scale: 1.1;
+    background-color:rgb(252, 217, 165) ;
+    color:rgb(46, 46, 45) ;
+}
+
+.main{
+    height: 70vh;
+    width: 95%;
+    padding: 20px;
+    display: flex;
+}
+
+.sub-main1{
+    height: 100%;
+    width: 40%;
+}
+.img-sub-main{
+    height: 90%;
+    width: 100%;
+    display: flex;
+}
+
+.img-list{
+    height: 100%;
+    width: 20%;
+}
+.img-list div{
+    margin: 2px 0;
+    height: 70px;
+    border: 1px solid rgb(252, 217, 165);
+    width: 80%;
+    border-radius: 5%;
+    transition: .5s;
+}
+
+.img-list img{
+    border-radius: 5%;
+}
+.img-list div:hover{
+    box-shadow: 0px 0px 3px 3px black;
+    scale: 1.1;
+}
+
+.main-img{
+    width: 80%;
+    height: 100%;
+    border: 3px solid rgb(252, 217, 165);
+    border-radius: 5%;
+    transition: .5s;
+}
+
+.main-img:hover{
+    box-shadow: 0px 0px 10px 10px black;
+    scale: 1.01;
+}
+.main-img img{
+    border-radius: 10%;
+}
+
+.buttons{
+    margin-top: 20px;
+    padding-left: 140px;
+}
+.buttons button{
+    padding: 15px 50px;
+    background-color: orange;
+    border: 0.5px solid black;
+    margin-top: 10px;
+    color: aliceblue;
+    font-weight: 700;
+    transition:.5s;
+}
+
+.buttons button:hover{
+    box-shadow: 0px 0px 10px 5px black;
+    scale: 1.05;
+}
+.sub-main2{
+    width: 57%;
+    height: 97%;
+    color: rgb(252, 217, 165);
+    line-height: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:0 25px;
+}
+
+.rating span{
+    background-color: rgb(3, 159, 3);
+    color: aliceblue;
+    padding: 2px 5px;
+    text-align: center;
+    border-radius:5px;
+    line-height: 25px;
+}
+
+.rating{
+    color: grey;
+    font-size: 14px;
+}
+
+.flipassured{
+    height: 20px;
+    width: 75px;
+    display: inline-block;
+    padding: 0 0 0 20px;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-tag{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.exchange{
+    width: 30rem;
+    margin: 20px 0;
+}
+.exchange div{
+    height: 50px;
+    display: flex;
+    margin:0 15px;
+    justify-content: space-between;
+}
+
+.exchange div input{
+    background-color: rgb(252, 217, 165);
+}
