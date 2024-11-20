@@ -16,7 +16,7 @@ fetchdata.then((data) => {
             <i style="color: gold; background-color: transparent;" class="bi bi-star-fill"></i>
                     ${el.rating}</p>
                     <p style="color: green;">${el.discountPercentage}% Discount</p>
-                    <button>view</button>
+                    <button><i class="bi bi-eye eye"></i><span class="view">view</span></button>
                 </div>
             </div>
          
