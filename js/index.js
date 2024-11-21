@@ -1,3 +1,6 @@
+a=localStorage.length
+a!=0?document.getElementById("notification").textContent=a:document.getElementById("notification").style.display="none"
+
 let fetchdata = fetch("https://dummyjson.com/products").then((res) => res.json())
 fetchdata.then((data) => {
     console.log(data.products);
@@ -23,11 +26,16 @@ fetchdata.then((data) => {
         `
     })
     document.querySelector(".products").innerHTML = str
-
+    
+    
 
 })
 
 function goToDetails(id){
     console.log(id);
     window.location.href=`../pages/details.html?id=${id}`    
+}
+
+function goToCart(){
+    window.location.href=`/pages/cart.html`
 }
