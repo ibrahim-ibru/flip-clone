@@ -8,41 +8,42 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
+    <div class="nav">
+        <div class="right">
+            <input type="search" name="" placeholder="Search Here..." id="">
+        </div>
+        <div class="mid">
+            <div ><a href="/index.html"> Products</a></div>
+            <div>Contact Us</div>
+            <div>Your Orders</div>
+            <div>Profile</div>
+        </div>
+        <div class="icon">
+            <div ><i class="bi bi-cart4 " onclick="goToCart()"><div class="notification" id="notification"></div></i></div>
+            <div><i class="bi bi-heart"></i></div>
+        </div>
+    </div>
     <div class="cart-main">
+        <div class="cart-body-main">
 
-        <div class="cart-body">
-            
-            
+            <div class="cart-body">
+            </div>
+            <div class="cart-order">
+                <div class="button-div">
+                    <button>Place Order</button>
+                </div>
+            </div>
         </div>
         <div class="cart-price-details">
             <div class="price-details">
                 <div class="price-header">PRICE DETAILS</div>
                 <div class="price-details-body">
-                    <div>
-                        <p>Price (3 items)</p>
-                        <p>MRP</p>
-                    </div>
-                    <div>
-                        <p>Discount</p>
-                        <p>dis price</p>
-                    </div>
-                    <div>
-                        <p>shiping charge</p>
-                        <p>$100 <span style="color: green;">FREE</span></p>
-                    </div>
-                    <div>
-                        <p>Total</p>
-                        <p>Total</p>
-                    </div>
+                    
                 </div>
             </div>
         </div>
     </div>
-    <div class="cart-order">
-        <div class="button-div">
-            <button>Place Order</button>
-        </div>
-    </div>
+    
         
     <script src="../js/cart.js"></script>
 </body>

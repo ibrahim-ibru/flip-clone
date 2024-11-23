@@ -1,12 +1,17 @@
 function displayCart(){
     str=``
+    discount=0
+    fultotal=0
+    fuldisc=0
     for(i=0;i<localStorage.length;i++){
         
         const key=localStorage.key(i)
         const prod=JSON.parse(localStorage.getItem(key))
         console.log(prod);
         discount=prod.price*(prod.discountPercentage/100)
-        const total=Math.round(prod.price+discount)        
+        let total=Math.round(prod.price+discount) 
+        fultotal+=total  
+        fuldisc+=discount     
         str+=`
         <div class="cart-item">
             <div class="img-cart"><img src="${prod.thumbnail}" alt=""></div>
@@ -23,9 +28,42 @@ function displayCart(){
         </div>
         
         `
+        
     }
+    console.log(`ftotal: ${fultotal} ;;; fdisc: ${Math.floor(fuldisc)}`);
+    displayPrice(fultotal,Math.floor(fuldisc),Math.round(discount))
+    
     document.querySelector(".cart-body").innerHTML=str
 
 }
 
+function removeCart(id){
+    localStorage.removeItem(id)
+    displayCart()
+}
+
+function displayPrice(ftotal,fdisc,discount){
+    
+    document.querySelector(".price-details-body").innerHTML=`
+    <div>
+                        <p>Price (${localStorage.length} items)</p>
+                        <p>$${ftotal}</p>
+                    </div>
+                    <div>
+                        <p>Discount Price</p>
+                        <p>$${localStorage.length<2?discount:fdisc}</p>
+                    </div>
+                    <div>
+                        <p>Shiping Charge</p>
+                        <p>${localStorage.length>=3?`<span style="text-decoration: line-through;color: gray;">$100</span><span style="color: green;margin-left:10px;">FREE</span>`:"$100"}</p>
+                    </div>
+                    <div class="total-price">
+                        <p>Total</p>
+                        <p>$${localStorage.length<3?(fdisc!=0?ftotal-fdisc+100:ftotal-discount+100):(fdisc!=0?ftotal-fdisc:ftotal-discount)}</p>
+                    </div>
+                    <div style="color :green;font-size:18px; margin-left:30px;">You will save $${fdisc!=0?fdisc:discount} on this order</div>
+    `
+}
+
 displayCart()
+

@@ -1,36 +1,40 @@
 *{
     margin: 0;
-    background-color: rgb(49, 49, 49);
+    background-color:rgb(246, 248, 249,);
+    color: black;
 }
 
+a{
+    text-decoration: none;
+}
 .nav{
-    background-color: rgba(28, 28, 28, 0.989);
+    background-color: white;
     height: 4rem;
     width: 100%;
     display: flex;
-    color:rgb(252, 217, 165) ;
+    position:fixed;
+    z-index: 2;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid black;
+    font-weight: 600;
 }
 
 .icon,.mid,.right{
     display: flex;
-    background-color: rgba(28, 28, 28, 0.989);
 
 }
 .mid div{
-    background-color: rgba(28, 28, 28, 0.989);
     margin-right: 4rem;
     font-size: 14px;
+    transition: .5s;
+    cursor: pointer;
 }
 
 .icon div{
-    background-color: rgba(28, 28, 28, 0.989);
     font-size: 30px;
 }
 .icon div i{
-    background-color: rgba(28, 28, 28, 0.989);
     margin-right: 2rem;
     position: relative;
 }
@@ -47,11 +51,10 @@
     font-size: 13px;
     font-weight: 700;
     text-align: center;
-    color: rgb(252, 217, 165);
+    color: white;
 }
 .right input{
     margin-left: 4rem;
-    background-color:rgb(252, 217, 165) ;
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
@@ -65,11 +68,10 @@
 }
 .main-body {
     text-align: center;
-    color:rgb(252, 217, 165) ;
+    
 }
 
 .products{
-    /* background-color: red; */
     margin: auto;
     height: 23rem;
     width: 80%;
@@ -78,13 +80,13 @@
     justify-content: space-evenly;
 }
 .product-card{
-    /* background-color: rgb(252, 217, 165); */
     height: 100%;
     width: 14rem;
     border-radius: 20px;
     margin-top: 5rem;
     cursor: pointer;
-    box-shadow: 3px 0px 10px 5px rgb(10, 10, 10);
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: .5s;
 }
 
@@ -92,10 +94,8 @@
     scale: 1.05;
 }
 .product-img{
-    /* background-color: green; */
     height: 56%;
     width: 95%;
-    border: 1px solid rgb(252, 217, 165);
     margin: 10px 5px 0px;
     border-radius: 20px;
 }
@@ -107,9 +107,7 @@
     border-radius: 20px;
 }
 .product-data{
-    /* background-color: yellow; */
     height: 40%;
-    /* background-color: rgb(252, 217, 165); */
     width: 85%;
     align-content: center;
     margin: auto;
@@ -125,20 +123,17 @@
     border-radius:0 5px;
     width: 50px;
     margin-top:10px ;
-    border-top: 1px solid rgb(252, 217, 165);
-    border-right: 1px solid rgb(252, 217, 165);
-    color: rgb(252, 217, 165); 
+    border-top: 1px solid black;
+    border-right: 1px solid black;
 }
 
 .product-data button:hover{
     scale: 1.1;
-    background-color:rgb(252, 217, 165) ;
     color:rgb(46, 46, 45) ;
 }
 .product-data button:hover .eye{
-    background-color:rgb(252, 217, 165) ;
     display: inline-block;
-
+    font-size: 16px;
 }
 .product-data button:hover .view{
     display: none;
@@ -148,6 +143,10 @@
     display: none;
 }
 
+.main-details{
+    padding-top: 70px;
+
+}
 .main{
     height: 70vh;
     width: 95%;
@@ -172,7 +171,7 @@
 .img-list div{
     margin: 2px 0;
     height: 70px;
-    border: 1px solid rgb(252, 217, 165);
+    border: .5px solid black;
     width: 80%;
     border-radius: 5%;
     transition: .5s;
@@ -182,21 +181,20 @@
     border-radius: 5%;
 }
 .img-list div:hover{
-    box-shadow: 0px 0px 3px 3px black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    scale: 1.01;
     scale: 1.1;
+    border: none;
 }
 
 .main-img{
     width: 80%;
     height: 100%;
-    border: 3px solid rgb(252, 217, 165);
     border-radius: 5%;
     transition: .5s;
 }
 
 .main-img:hover{
-    box-shadow: 0px 0px 10px 10px black;
-    scale: 1.01;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    scale: 1.01;
 }
 .main-img img{
     border-radius: 10%;
@@ -223,7 +221,6 @@
 .sub-main2{
     width: 57%;
     height: 97%;
-    color: rgb(252, 217, 165);
     line-height: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin:0 25px;
@@ -273,22 +270,22 @@ img{
     justify-content: space-between;
 }
 
-.exchange div input{
-    color: rgb(252, 217, 165);
-}
 
 .cart-main{
     display: flex;
-    padding-top: 4%;
+    padding-top: 7%;
     width: 100%;
 }
 
+.cart-body-main{
+    width: 65%;
+
+}
+
 .cart-body{
-    width: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content:end ;
-    /* background-color: #fff; */
 }
 
 .cart-item{
@@ -296,8 +293,7 @@ img{
     width: 90%;
     display: flex;
     justify-content: space-between;
-    color: rgb(252, 217, 165);
-    border: .5px solid rgb(252, 217, 165);
+    border: .5px solid black;
     line-height: 35px;
     margin-top: 5px;
 }
@@ -306,7 +302,7 @@ img{
     height:55%;
     width: 20%;
     margin: 40px 10px;
-    border: .5px solid rgb(252, 217, 165) ;
+    border: .5px solid black ;
 }
 
 .cart-prod-details{
@@ -318,14 +314,12 @@ img{
     
     .btn-remove-cart{
         padding: 5px 10px;
-        border: 1px solid rgb(252, 217, 165);
+        border: 1px solid black;
         border-radius: 5px;
-        color: rgb(252, 217, 165);
         margin-top: 10px;
         transition: .5s;
     }
     .btn-remove-cart:hover{
-        background-color: rgb(252, 217, 165);
         color: rgb(49, 49, 49);
         scale: 1.1;
     }
@@ -338,45 +332,45 @@ img{
 .cart-price-details{
     width: 30%;
     height: 70vh;
-    /* background-color: blue; */
 }
 .price-details{
     height: 60vh;
-    width: 80%;
+    width: 90%;
     margin: auto;
-    border: .5px solid rgb(252, 217, 165);
-    /* background-color: #fff; */
+    border: .5px solid black;
+    font-size: 20px;
 }
 
 .price-header{
     width: 80%;
     height: 60px;
-    background-color: rgb(49, 49, 49);
     text-align: start;
     padding:0 10%;
-    /* margin-left: 10px; */
     align-content: center;
-    font-size: 18px;
-    border-bottom: .5px solid rgb(252, 217, 165);
-    color: rgb(252, 217, 165);
+    font-size: 22px;
+    border-bottom: .5px solid black;
 }
 
 .price-details-body div{
-    color: rgb(252, 217, 165);
     display: flex;
     justify-content: space-between;
     margin: 15px;
     line-height: 50px;
 }
 
+.total-price{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 70px;
 
+}
 
 .cart-order{
     height: 70px;
-    width: 70%;
+    width: 100%;
 }
 .button-div{
-    background-color: rgb(252, 217, 165);
+    background-color: black;
     height: 100%;
     width: 90.1%;
     margin-left: 9.9%;
@@ -384,7 +378,6 @@ img{
 }
 .button-div button{
     padding: 10px 30px;
-    color: rgb(252, 217, 165);
     font-size: 16px;
     font-weight: 600;
     margin-left: 72%;

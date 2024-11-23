@@ -42,14 +42,14 @@ async function getProduct() {
                 <p style="font-size: 14px;"><div class="img-tag"><img src="/images/flip-tag.png" alt=""></div>Bank Offer <span> 5%</span> Unlimited Cashback on Flipkart Axis Bank Credit Card T&C</p>
                 <p style="font-size: 14px;"><div class="img-tag"><img src="/images/flip-tag.png" alt=""></div>Bank Offer <span> 5%</span> Unlimited Cashback on Flipkart Axis Bank Credit Card T&C</p>
                 <div class="exchange">
-                <div class="ex1" style="border: 1px solid rgb(252, 217, 165);">
-                <div class="left-ex">
+                <div class="ex1" style="border: 1px solid ;">
+                <div clablackss="left-ex">
                 <input type="radio" name="" id="">
                 </div>
                 <div class="mid-ex">Buy without Exchange</div>
                 <div class="right-ex">${data.price}</div>
                 </div>
-                <div class="ex2" style="border: 1px solid rgb(252, 217, 165);">
+                <div class="ex2" style="border: 1px solid black;">
                 <div class="left-ex">
                 <input type="radio" name="" id="">
                 </div>
