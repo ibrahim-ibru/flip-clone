@@ -34,7 +34,7 @@ async function getProduct() {
                 <div class="sub-main2">
                 <h2>${data.title}</h2>
                 <div ><p class="rating"><span><i style="color: gold; background-color: transparent;margin:0 5px 0 0" class="bi bi-star-fill"></i>${data.rating}</span> Ratings</p></div>
-                <span><b style="font-size:35px; padding: 0 17px 0 0;">${data.price}</b></span> <span style="font-size: 22px; text-decoration: line-through; color: grey; padding: 0 10px 0 0;">${total}</span><span style="color: green;">  ${data.discountPercentage}% off</span><span><div class="flipassured"><img src="./images/flipassured.png" alt=""></div></span>
+                <span><b style="font-size:35px; padding: 0 17px 0 0;">${data.price}</b></span> <span style="font-size: 22px; text-decoration: line-through; color: grey; padding: 0 10px 0 0;">${total}</span><span style="color: green;">  ${data.discountPercentage}% off</span><span><div class="flipassured"><img src="../images/flipassured.png" alt=""></div></span>
                 <p style="font-size: 18px;"><b>Available offers</b></p>
                 <p style="font-size: 14px;"><div class="img-tag"><img src="/images/flip-tag.png" alt=""></div>Bank Offer <span> 5%</span> Unlimited Cashback on Flipkart Axis Bank Credit Card T&C</p>
                 <p style="font-size: 14px;"><div class="img-tag"><img src="/images/flip-tag.png" alt=""></div>Bank Offer <span> 5%</span> Unlimited Cashback on Flipkart Axis Bank Credit Card T&C</p>
