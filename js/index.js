@@ -32,9 +32,9 @@ a!=0?document.getElementById("notification").textContent=a:document.getElementBy
 
 function goToDetails(id){
     console.log(id);
-    window.location.href=`../pages/details.html?id=${id}`    
+    window.location.href=`./pages/details.html?id=${id}`    
 }
 
 function goToCart(){
-    window.location.href=`../pages/cart.html`
+    window.location.href=`./pages/cart.html`
 }
