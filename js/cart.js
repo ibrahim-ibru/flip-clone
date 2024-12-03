@@ -72,5 +72,5 @@ displayCart()
 
 function goToDetails(id){
     console.log(id);
-    window.location.href=`./pages/details.html?id=${id}`    
+    window.location.href=`../pages/details.html?id=${id}`    
 }
