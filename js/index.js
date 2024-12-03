@@ -36,5 +36,5 @@ function goToDetails(id){
 }
 
 function goToCart(){
-    window.location.href=`/pages/cart.html`
+    window.location.href=`../pages/cart.html`
 }
