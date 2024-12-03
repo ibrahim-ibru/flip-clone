@@ -13,7 +13,7 @@ function displayCart(){
         fultotal+=total  
         fuldisc+=discount     
         str+=`
-        <div class="cart-item">
+        <div class="cart-item" onclick="goToDetails(${prod.id})">
             <div class="img-cart"><img src="${prod.thumbnail}" alt=""></div>
             <div class="cart-prod-details">
                 <h2>${prod.title}</h2>
@@ -42,6 +42,9 @@ function removeCart(id){
     displayCart()
 }
 
+a=localStorage.length
+a!=0?document.getElementById("notification").textContent=a:document.getElementById("notification").style.display="none"
+
 function displayPrice(ftotal,fdisc,discount){
     
     document.querySelector(".price-details-body").innerHTML=`
@@ -67,3 +70,7 @@ function displayPrice(ftotal,fdisc,discount){
 
 displayCart()
 
+function goToDetails(id){
+    console.log(id);
+    window.location.href=`./pages/details.html?id=${id}`    
+}

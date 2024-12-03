@@ -64,6 +64,9 @@ async function getProduct() {
 }
 getProduct()
 
+a=localStorage.length
+a!=0?document.getElementById("notification").textContent=a:document.getElementById("notification").style.display="none"
+
 function addToCart(id){
     localStorage.setItem(id,JSON.stringify(data))
     getProduct()
