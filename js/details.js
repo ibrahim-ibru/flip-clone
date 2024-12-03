@@ -70,5 +70,5 @@ function addToCart(id){
 }
 
 function goToCart(id){
-    window.location.href=`/pages/cart.html?id=${id}`
+    window.location.href=`../pages/cart.html?id=${id}`
 }
